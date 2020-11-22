@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.world {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  perspective: 500px;
+}
+
+@keyframes poster__ani {
+  0% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateY(20deg);
+  }
+}
+
+.poster {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: yellow;
+  animation: poster__ani 1.6s infinite linear alternate;
+}
+
+.poster__title {
+  padding: 0.5em 0;
+  font-size: 2rem;
+  font-family: swagger;
+  font-weight: normal;
+  text-align: center;
+}
+
+.raian {
+  position: absolute;
+  width: 40%;
+}
+
+.raian:nth-of-type(1) {
+  width: 60%;
+  right: 5%;
+  bottom: 5%;
+}
+
+.raian:nth-of-type(2) {
+  width: 20%;
+  left: 20%;
+  bottom: 30%;
+}
