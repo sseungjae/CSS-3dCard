@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-color: rgb(169, 113, 74);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -32,8 +36,10 @@ img {
   height: 250px;
   border: 2px solid black;
   border-radius: 10px;
-  background: yellow;
+  background: rgba(228, 223, 60, 0.926);
   animation: poster__ani 1.6s infinite linear alternate;
+  transform-style: preserve-3d;
+  box-shadow: rgba(146, 233, 181, 0.7) 0 0 15px;
 }
 
 .poster__title {
@@ -42,6 +48,7 @@ img {
   font-family: swagger;
   font-weight: normal;
   text-align: center;
+  transform: translateZ(80px);
 }
 
 .raian {
@@ -53,10 +60,19 @@ img {
   width: 60%;
   right: 5%;
   bottom: 5%;
+  transform: translateZ(40px);
 }
 
 .raian:nth-of-type(2) {
   width: 20%;
   left: 20%;
   bottom: 30%;
+  transform: translateZ(15px);
+}
+
+.raian:nth-of-type(2):hover {
+  width: 30%;
+  left: 20%;
+  bottom: 17%;
+  transform: translateZ(40px);
 }
